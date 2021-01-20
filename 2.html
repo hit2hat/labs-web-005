@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>2 task</title>
+    </head>
+    <body>
+        <div>
+            <input type="button" onclick="rand()" value="Кнопка" />
+            <input type="text" id="field" value="" />
+        </div>
+        <script>
+            function rand() {
+                document.getElementById('field').value = Math.round(Math.random() * (10 - 1) + 1);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>6 task</title>
+        <style>
+            div {
+                width: 300px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 50px 40%;
+                text-align: center;
+            }
+
+            input {
+                position: fixed;
+                right: 50px;
+                bottom: 50px;
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                display: none;
+                margin: 0;
+                outline: none;
+                color: black;
+                font-size: 25px;
+            }
+            @media (min-width: 1365px) and (max-width: 1367px) {
+                .vision {
+                    display: block;
+                }
+            }
+            @media (min-width: 1919px) and (max-width: 1921px) {
+                .vision {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <input type="button" id="arr" value="↑" onclick="scr()">
+    <script>
+        function scr() {
+            window.scrollTo(0, 0);
+        }
+        function move() {
+            if (window.pageYOffset > 500) {
+                document.getElementById('arr').classList.add('vision');
+            } else {
+                document.getElementById('arr').classList.remove('vision');
+            }
+        }
+        window.addEventListener('scroll', move);
+    </script>
+    </body>
+</html>

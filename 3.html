@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>3 task</title>
+    </head>
+    <body>
+    <input type="button" onclick="copy()" value="Copy">
+    <input type="text" id="text1">
+    <input type="button" onclick="remove()" value="Delete">
+    <input type="text" id="text2">
+    <script>
+        function copy() {
+            let a = document.getElementById('text1'),
+                b = document.getElementById('text2');
+            if (a.value === '') {
+                alert("Введите текст :)");
+            } else {
+                b.value = a.value;
+            }
+        }
+
+        function remove() {
+            let a = document.getElementById('text1'),
+                b = document.getElementById('text2');
+            a.value = '';
+            b.value = '';
+        }
+    </script>
+    </body>
+</html>
